@@ -15,5 +15,5 @@ if __name__ == '__main__':
     rate = rospy.Rate(10)
     while not rospy.is_shutdown():
         rospy.loginfo(list)
-        pub.publish(list)
+        pub.publish("Left side: "+str(list[0])+" Right Side: "+str(list[1]))
         rate.sleep()
